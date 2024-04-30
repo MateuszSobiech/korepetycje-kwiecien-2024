@@ -5,9 +5,9 @@ import { Table } from './Table';
 export const RenderProps = () => {
   return (
     <>
-      {/* <Table /> */}
+      <Table />
       {/* <Currencies /> */}
-      <TODOCurrencies />
+      {/* <TODOCurrencies /> */}
     </>
   );
 };
