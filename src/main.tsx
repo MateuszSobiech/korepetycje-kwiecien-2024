@@ -6,6 +6,7 @@ import { Hoc, HocHook } from './HOC/HOC';
 import { RenderProps } from './Render Props/RenderProps';
 import { Optimistic } from './Optimistic ADD/Optimistic';
 import { TODOOptimistic } from './Optimistic ADD/TODOOptimistic';
+import { BindCallApply } from './bind call aplly/BindCallApply';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
@@ -13,9 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
     {/* <RenderProps /> */}
 
-    {/* <Optimistic /> */}
+    <Optimistic />
     {/* <TODOOptimistic /> */}
 
-    {/* <Application /> */}
+    {/* <BindCallApply /> */}
   </>
 );

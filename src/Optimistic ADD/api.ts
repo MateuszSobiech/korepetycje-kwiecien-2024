@@ -16,10 +16,6 @@ let initialUsers = [
   },
 ];
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-//@ts-expect-error
-window.users = initialUsers;
-
 export type User = (typeof initialUsers)[number];
 
 export const getUsers = async (): Promise<User[]> => {
@@ -36,9 +32,11 @@ export const putUserAge = async (userId: number) => {
     setTimeout(() => {
       console.log('PUT');
 
-      initialUsers.find((user) => user.id === userId)!.age += 1;
+      initialUsers = initialUsers.map((user) => {
+        if (user.id !== userId) return user;
 
-      initialUsers = [...initialUsers];
+        return { ...user, age: user.age + 1 };
+      })
 
       resolve(null);
     }, 3000);

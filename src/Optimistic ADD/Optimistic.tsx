@@ -2,10 +2,6 @@ import { useEffect, useState } from 'react';
 import { User, getUsers, putUserAge } from './api';
 
 export const Optimistic = () => {
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-ignore
-  console.table(window.users)
-
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
