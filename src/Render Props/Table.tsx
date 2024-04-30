@@ -3,13 +3,13 @@ interface User {
   age: number;
 }
 
-interface TableProps {
+interface Props {
   renderHeader: (data: string[]) => JSX.Element;
   renderBody: (data: User[]) => JSX.Element;
   renderFooter: (data: string) => JSX.Element;
 }
 
-const RenderTable = ({ renderHeader, renderBody, renderFooter }: TableProps) => {
+const RenderTable = ({ renderHeader, renderBody, renderFooter }: Props) => {
   const header = ['Name', 'Age'];
   const users: User[] = [
     { name: 'Arek', age: 39 },
