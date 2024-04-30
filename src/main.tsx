@@ -10,11 +10,11 @@ import { BindCallApply } from './bind call aplly/BindCallApply';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
-    {/* <Hoc name={'LIST'} /> */}
+    <Hoc name={'LIST'} />
 
     {/* <RenderProps /> */}
 
-    <Optimistic />
+    {/* <Optimistic /> */}
     {/* <TODOOptimistic /> */}
 
     {/* <BindCallApply /> */}
