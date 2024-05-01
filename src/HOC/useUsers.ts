@@ -22,7 +22,7 @@ export const useUsers = () => {
   const [users, setUsers] = useState<typeof initialUsers>();
 
   useEffect(() => {
-    setUsers(initialUsers);
+    setUsers([...initialUsers]);
   }, []);
 
   return users;

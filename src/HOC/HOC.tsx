@@ -1,4 +1,4 @@
-import { WithUsers, withUsers } from '../HOC/WithButtonStyles';
+import { WithUsers, withUsers } from './WithUsers';
 import { useUsers } from '../HOC/useUsers';
 
 interface Props extends WithUsers {
